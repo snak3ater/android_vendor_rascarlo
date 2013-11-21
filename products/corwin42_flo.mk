@@ -15,3 +15,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT=google/razo
 
 # Inherit media effect blobs
 -include vendor/rascarlo/products/common_media_effects.mk
+
+# boot animation
+PRODUCT_COPY_FILES += \
+    vendor/corwin42/proprietary/flo/system/media/bootanimation.zip:system/media/bootanimation.zip
