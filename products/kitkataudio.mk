@@ -1,6 +1,6 @@
 # Kitkat audio package
 
-LOCAL_PATH:= vendor/psx/proprietary/system/media/audio
+LOCAL_PATH:= vendor/rascarlo/proprietary/system/media/audio
 
 # Alarms
 PRODUCT_COPY_FILES += \

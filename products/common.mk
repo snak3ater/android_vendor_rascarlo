@@ -4,7 +4,7 @@ PRODUCT_BRAND := rascarlo
 PRODUCT_DEVICE := generic
 
 # Inherit kitkat audio package.
-$(call inherit-product, vendor/psx/products/kitkataudio.mk)
+$(call inherit-product, vendor/rascarlo/products/kitkataudio.mk)
 
 # Common overrides
 PRODUCT_PROPERTY_OVERRIDES += \
