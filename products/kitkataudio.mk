@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/notifications/Carme.ogg:system/media/audio/notifications/Carme.ogg \
         $(LOCAL_PATH)/notifications/Ceres.ogg:system/media/audio/notifications/Ceres.ogg \
         $(LOCAL_PATH)/notifications/Elara.ogg:system/media/audio/notifications/Elara.ogg \
-        $(LOCAL_PATH)/notifications/Europa:system/media/audio/notifications/Europa.ogg \
+        $(LOCAL_PATH)/notifications/Europa.ogg:system/media/audio/notifications/Europa.ogg \
         $(LOCAL_PATH)/notifications/lapetus.ogg:system/media/audio/notifications/lapetus.ogg \
         $(LOCAL_PATH)/notifications/lo.ogg:system/media/audio/notifications/lo.ogg \
         $(LOCAL_PATH)/notifications/Rhea.ogg:system/media/audio/notifications/Rhea.ogg \
