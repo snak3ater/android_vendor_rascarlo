@@ -20,7 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Launcher3 supported devices
 ifneq ($(filter rascarlo_mako rascarlo_hammerhead,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
 # Auto-rotate
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/rascarlo/overlay
