@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
     Launcher3
 # Auto-rotate
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/rascarlo/overlay/Launcher3
+    vendor/rascarlo/overlay
 endif
 
 # STK: overlay common to all devices with telephony
@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
 endif
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/rascarlo/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/rascarlo/overlay
 
 # Latin IME lib
 PRODUCT_COPY_FILES += \
