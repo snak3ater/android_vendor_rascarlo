@@ -30,7 +30,8 @@ endif
 ifneq ($(filter rascarlo_mako rascarlo_hammerhead,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
-    Stk
+    Stk \
+    Torch
 endif
 
 # Common overlay
@@ -43,6 +44,14 @@ PRODUCT_COPY_FILES += \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/prebuilt/bin/sysinit:system/bin/sysinit 
+
+# userinit support
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Motox dalvik patch
     ifneq ($(filter rascarlo_mako,$(TARGET_PRODUCT)),)
@@ -58,3 +67,10 @@ PRODUCT_COPY_FILES += \
 
 # Additional packages
 -include vendor/rascarlo/products/packages.mk
+
+# SU Support
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/prebuilt/bin/su:system/xbin/daemonsu \
+    vendor/rascarlo/prebuilt/bin/su:system/xbin/su \
+    vendor/rascarlo/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/rascarlo/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
