@@ -47,4 +47,11 @@ PRODUCT_COPY_FILES += \
 # Motox dalvik patch
     ifneq ($(filter rascarlo_mako,$(TARGET_PRODUCT)),)
     $(call inherit-product, vendor/rascarlo/products/motoxdalvikpatch.mk)
+
+# Gapps backup script
+
+PRODUCT_COPY_FILES += \
+    vendor/purity/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/purity/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/purity/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 endif
