@@ -51,7 +51,11 @@ PRODUCT_COPY_FILES += \
 # Gapps backup script
 
 PRODUCT_COPY_FILES += \
-    vendor/purity/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/purity/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/purity/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+    vendor/rascarlo/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/rascarlo/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/rascarlo/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+
+# Additional packages
+-include vendor/rascarlo/products/packages.mk
+
 endif
