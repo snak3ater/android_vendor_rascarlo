@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
 # Motox dalvik patch
     ifneq ($(filter rascarlo_mako,$(TARGET_PRODUCT)),)
     $(call inherit-product, vendor/rascarlo/products/motoxdalvikpatch.mk)
+    endif
 
 # Gapps backup script
 
@@ -57,5 +58,3 @@ PRODUCT_COPY_FILES += \
 
 # Additional packages
 -include vendor/rascarlo/products/packages.mk
-
-endif
