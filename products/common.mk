@@ -72,3 +72,8 @@ PRODUCT_COPY_FILES += \
 # Dashclock
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/prebuilt/apk/DashClock.apk:system/app/DashClock.apk
+
+# Z2 Dalvik patch
+ifneq ($(filter rascarlo_hammerhead rascarlo_mako,$(TARGET_PRODUCT)),)
+$(call inherit-product, vendor/rascarlo/products/z2dalvikpatch.mk)
+endif
