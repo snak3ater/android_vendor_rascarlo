@@ -74,3 +74,7 @@ PRODUCT_COPY_FILES += \
     vendor/rascarlo/prebuilt/bin/su:system/xbin/su \
     vendor/rascarlo/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/rascarlo/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
+
+# Dashclock
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/prebuilt/apk/DashClock.apk:system/app/DashClock.apk
