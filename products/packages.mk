@@ -1,3 +1,4 @@
 # Additional apps
 PRODUCT_PACKAGES += \
-    OmniSwitch
+    OmniSwitch \
+    CMFileManager
