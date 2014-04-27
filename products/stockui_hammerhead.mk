@@ -5,7 +5,7 @@ $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 $(call inherit-product, vendor/rascarlo/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := rascarlo_hammerhead
+PRODUCT_NAME := stockui_hammerhead
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := hammerhead
 PRODUCT_MODEL := Nexus 5

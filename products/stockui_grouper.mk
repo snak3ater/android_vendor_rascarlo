@@ -5,7 +5,7 @@ $(call inherit-product, device/asus/grouper/full_grouper.mk)
 $(call inherit-product, vendor/rascarlo/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := rascarlo_grouper
+PRODUCT_NAME := stockui_grouper
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := grouper
 PRODUCT_MODEL := Nexus 7

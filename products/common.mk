@@ -1,6 +1,6 @@
 # Generic product
-PRODUCT_NAME := rascarlo
-PRODUCT_BRAND := rascarlo
+PRODUCT_NAME := stockui
+PRODUCT_BRAND := stockui
 PRODUCT_DEVICE := generic
 
 # Inherit kitkat audio package.
@@ -18,7 +18,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 # Launcher3 supported devices
-ifneq ($(filter rascarlo_mako rascarlo_hammerhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter stockui_mako stockui_hammerhead,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     Launcher3 \
 # Auto-rotate
@@ -27,7 +27,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 endif
 
 # STK: overlay common to all devices with telephony
-ifneq ($(filter rascarlo_mako rascarlo_hammerhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter stockui_mako stockui_hammerhead,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk \
@@ -54,7 +54,7 @@ PRODUCT_COPY_FILES += \
     vendor/rascarlo/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Motox dalvik patch
-    ifneq ($(filter rascarlo_mako,$(TARGET_PRODUCT)),)
+    ifneq ($(filter stockui_mako,$(TARGET_PRODUCT)),)
     $(call inherit-product, vendor/rascarlo/products/motoxdalvikpatch.mk)
     endif
 

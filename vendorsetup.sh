@@ -1,5 +1,5 @@
-add_lunch_combo rascarlo_emulator-eng
-add_lunch_combo rascarlo_grouper-eng
-add_lunch_combo rascarlo_hammerhead-user
-add_lunch_combo rascarlo_mako-user
-add_lunch_combo rascarlo_manta-user
+add_lunch_combo stockui_emulator-eng
+add_lunch_combo stockui_grouper-eng
+add_lunch_combo stockui_hammerhead-user
+add_lunch_combo stockui_mako-user
+add_lunch_combo stockui_manta-user

@@ -5,7 +5,7 @@ $(call inherit-product, device/lge/mako/full_mako.mk)
 $(call inherit-product, vendor/rascarlo/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := rascarlo_mako
+PRODUCT_NAME := stockui_mako
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := mako
 PRODUCT_MODEL := Nexus 4

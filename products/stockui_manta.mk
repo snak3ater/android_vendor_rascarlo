@@ -5,7 +5,7 @@ $(call inherit-product, device/samsung/manta/full_manta.mk)
 $(call inherit-product, vendor/rascarlo/products/common.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := rascarlo_manta
+PRODUCT_NAME := stockui_manta
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := manta
 PRODUCT_MODEL := Nexus 10
