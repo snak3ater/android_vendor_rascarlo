@@ -53,13 +53,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
-# Motox dalvik patch
-    ifneq ($(filter stockui_mako,$(TARGET_PRODUCT)),)
-    $(call inherit-product, vendor/rascarlo/products/motoxdalvikpatch.mk)
-    endif
-
 # Gapps backup script
-
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/rascarlo/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
