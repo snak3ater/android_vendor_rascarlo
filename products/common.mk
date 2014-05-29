@@ -71,3 +71,6 @@ PRODUCT_COPY_FILES += \
 # Dashclock
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/prebuilt/apk/DashClock.apk:system/app/DashClock.apk
+
+#Theme
+include vendor/rascarlo/configs/themes_common.mk
