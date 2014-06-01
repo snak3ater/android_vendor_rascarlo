@@ -30,8 +30,7 @@ endif
 ifneq ($(filter stockui_mako stockui_hammerhead,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
-    Stk \
-    Torch
+    Stk
 endif
 
 # Common overlay
